@@ -9,12 +9,12 @@ import { FormsModule } from '@angular/forms';
 })
 export class AppComponent {
   title = 'angularTesting';
-
+  empData;
   constructor(private router: Router, private route: ActivatedRoute) { }
   ngOnInit() {
 
   }
-
+ 
   // onSubmit(userlogin) {
   //   if (userlogin.value.username === 'rina' && userlogin.value.password === 'rina@123') {
   //     console.log(userlogin.value.username);
