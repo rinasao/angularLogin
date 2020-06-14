@@ -1,31 +1,3 @@
-// import { Component, OnInit } from '@angular/core';
-// import { Router, ActivatedRoute } from "@angular/router";
-
-// @Component({
-//   selector: 'app-login',
-//   templateUrl: './login.component.html',
-//   styleUrls: ['./login.component.scss']
-// })
-// export class LoginComponent implements OnInit {
-
-//   constructor(private router: Router, private route: ActivatedRoute) { }
-
-//   ngOnInit(): void {
-//   }
-//     onSubmit(userlogin) {
-//     if (userlogin.value.username === 'rina' && userlogin.value.password === 'rina@123') {
-//       console.log(userlogin.value.username);
-
-//       this.router.navigate(['/register']);
-//     } else {
-//       alert("Username or Password is incorrect");
-//     }
-//   }
-
-// }
-
-
-
 
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
@@ -65,7 +37,7 @@ export class LoginComponent implements OnInit {
         if(loginForm.value.username == 'rina' && loginForm.value.password == 'rina@123'){
             this.router.navigate(['/register']);
         }else{
-            console.log("incorrect");
+            alert("Username or password is incorrect");
         }
         this.loading = true;
     }

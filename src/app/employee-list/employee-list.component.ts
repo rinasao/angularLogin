@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, ActivatedRoute } from '@angular/router';
+import { RegisterService} from '../register.service';
 
 @Component({
   selector: 'app-employee-list',
@@ -6,13 +8,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./employee-list.component.scss']
 })
 export class EmployeeListComponent implements OnInit {
-  constructor() { }
   empData;
+  constructor(private router: Router,public registerService : RegisterService) {
+    this.empData = {};
+   }
   ngOnInit(): void {
-  }
-  onNavigation(feature){
-    this.empData = feature;
-    console.log("emp data", this.empData);
+    this.registerService.getData('registerData');
+    this.empData = this.registerService.getData('registerData');
+    if(this.empData.length == 0){
+      this.router.navigate(['./register']);
+      return;
+    }
   }
 
 }

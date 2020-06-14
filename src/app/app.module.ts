@@ -9,7 +9,7 @@ import { AppComponent } from './app.component';
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
 import { EmployeeListComponent } from './employee-list/employee-list.component';
-
+import { RegisterService} from './register.service';
 
 @NgModule({
   declarations: [
@@ -24,7 +24,7 @@ import { EmployeeListComponent } from './employee-list/employee-list.component';
     ReactiveFormsModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [RegisterService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

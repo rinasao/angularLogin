@@ -1,4 +1,29 @@
-<!-- <p>employee-list works!</p>
-<p (listEmployee) = "onNavigation($event)"></p>
-{{empData}} -->
-<app-employee-list (listEmployee) = "onNavigation($event)"></app-employee-list>
+<h2>Employee List</h2>
+<table class="table">
+    <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Gender</th>
+        <th>Address 1</th>
+        <th>Address 2</th>
+        <th>State</th>
+        <th>Pin Code</th>
+        <th>Email</th>
+        <th>Mobile</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor = "let e of empData">
+        <td>{{e.firstName}}</td>
+        <td>{{e.lastName}}</td>
+        <td>{{e.gender}}</td>
+        <td>{{e.address1}}</td>
+        <td>{{e.address2}}</td>
+        <td>{{e.state}}</td>
+        <td>{{e.pin}}</td>
+        <td>{{e.email}}</td>
+        <td>{{e.mobile}}</td>
+      </tr>
+    </tbody>
+  </table>
