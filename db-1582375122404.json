@@ -1,0 +1,34 @@
+{
+  "posts": [
+    {
+      "p_id": "1",
+      "p_name": "peter",
+      "p_cost": "12"
+    },
+    {
+      "p_id": "2",
+      "p_name": "peter",
+      "p_cost": "12"
+    },
+    {
+      "p_id": "3",
+      "p_name": "peter",
+      "p_cost": "12"
+    },
+    {
+      "p_id": "4",
+      "p_name": "peter",
+      "p_cost": "12"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

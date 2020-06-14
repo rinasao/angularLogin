@@ -1,0 +1,16 @@
+{
+  "products": [
+    {
+      "p_id": 4,
+      "p_name": "ggggggggggg",
+      "p_cost": 433,
+      "id": 1
+    },
+    {
+      "p_id": 34,
+      "p_name": "aaaaaaa",
+      "p_cost": 45,
+      "id": 2
+    }
+  ]
+}

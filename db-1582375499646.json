@@ -1,0 +1,19 @@
+{
+  "products": [
+    {
+      "pid": "1",
+      "pname": "peter",
+      "pcost": "12"
+    },
+    {
+      "pid": "2",
+      "pname": "peter",
+      "pcost": "12"
+    },
+    {
+      "pid": "3",
+      "pname": "peter",
+      "pcost": "12"
+    }
+  ]
+}
